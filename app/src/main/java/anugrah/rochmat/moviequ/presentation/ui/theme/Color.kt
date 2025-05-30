@@ -1,4 +1,4 @@
-package anugrah.rochmat.moviequ.ui.theme
+package anugrah.rochmat.moviequ.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
