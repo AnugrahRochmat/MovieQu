@@ -6,6 +6,26 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
 }
 
+fun validateApiKey(): String {
+    val apiKey = project.findProperty("TMDB_API_KEY") as String?
+
+    return when {
+        apiKey == null -> {
+            throw GradleException(
+                "TMDB_API_KEY not found in gradle.properties. \n" +
+                        "Add TMDB_API_KEY=your_key to /gradle.properties"
+            )
+        }
+        apiKey.isEmpty() -> {
+            throw GradleException(
+                "TMDB_API_KEY cannot be empty. \n" +
+                        "Add TMDB_API_KEY=your_key to /gradle.properties"
+            )
+        }
+        else -> apiKey
+    }
+}
+
 android {
     namespace = "anugrah.rochmat.moviequ"
     compileSdk = 35
@@ -18,6 +38,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Setup TMDB API key
+        val apiKey = validateApiKey()
+        buildConfigField("String", "TMDB_API_KEY", "\"$apiKey\"")
     }
 
     buildTypes {
