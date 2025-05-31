@@ -127,8 +127,8 @@ dependencies {
     // GMS Play Services
     implementation(libs.google.gms.services.location)
 
-    // Permission
-    implementation(libs.google.accompanist.permissions)
+    // Accompanist
+    implementation(libs.google.accompanist.systemui)
 
     // Coil-kt Coil Compose
     implementation(libs.io.coilkt.coil.compose)
