@@ -1,4 +1,4 @@
-name: Restrict PR source branch
+name: Restrict PR to Master
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  restrict-pr:
+  restrict-master-pr:
     runs-on: ubuntu-latest
     steps:
       - name: Check source branch
