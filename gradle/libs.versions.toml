@@ -18,7 +18,8 @@ moshi = "1.15.0"
 koin = "3.5.3"
 room = "2.7.1"
 gmsServices = "21.3.0"
-accompanist = "0.32.0"
+accompanistPermission = "0.32.0"
+accompanistSystemUi = "0.30.1"
 mockk = "1.13.8"
 coroutines = "1.7.3"
 coil-compose = "2.5.0"
@@ -71,8 +72,9 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 # Location Services
 google-gms-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gmsServices"}
 
-# Permissions
-google-accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist"}
+# accompanist
+google-accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanistPermission"}
+google-accompanist-systemui = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanistSystemUi"}
 
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
