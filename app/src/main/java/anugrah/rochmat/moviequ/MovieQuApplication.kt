@@ -15,4 +15,5 @@ class MovieQuApplication : Application() {
             modules(coreModules)
         }
     }
+    // Test Dummy
 }
