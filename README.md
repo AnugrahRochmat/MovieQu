@@ -21,10 +21,13 @@ This allows me to explore:
 - **Feature-based architecture** with multiple interconnected modules
 - **Advanced Compose patterns** for larger, more realistic applications
 
-## Features
-_Features will be added soon_
+## 🎬 Features Added
+- **Popular Movies Display**: Fetch and show popular movies in a scrollable list
+- **Movie Information**: Display movie titles, posters, release dates and overview
+- **Genre Integration**: Show movie genres with each movie item
+- **Offline Support**: Cache genres locally for improved performance
 
-## Technologies & Libraries Used
+## 🏗️ Technologies & Libraries Used
 #### UI Framework
 - **Jetpack Compose** - Modern declarative UI toolkit for building native Android interfaces
 #### Architecture & Design Pattern
@@ -38,11 +41,19 @@ _Features will be added soon_
 #### Dependency Injection
 - **Koin** - Lightweight dependency injection framework for Kotlin
 
-## Screenshots
-_Screenshots will be added soon_
+## 📱 Screenshots
+![449522785-a470b81a-415c-4cd0-b615-c4f955e10a5f (1) (1)](https://github.com/user-attachments/assets/658ac015-3f3b-4452-9fd6-239cefe731cb)
 
-## Acknowledgments
+## 🚀 Future Enhancements
+- [ ] Pull-to-refresh
+- [ ] Pagination for large lists
+- [ ] Movie detail screen
+- [ ] Search functionality
+- [ ] Favorite movies
+- [ ] Different movie categories (Top Rated, Upcoming)
+
+## 📚 Acknowledgments
 This project was built as part of my journey to learn modern Android development. Special thanks to the Android developer community for the excellent documentation and resources.
 
-## License
+## 📜 License
 This project is for educational purposes. Feel free to use it as a reference for your own learning journey.
