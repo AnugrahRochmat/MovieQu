@@ -139,12 +139,8 @@ dependencies {
     testImplementation(libs.mockk.android)
     testImplementation(libs.reactivex.rxjava3.rxjava)
     testImplementation(libs.kotlinx.coroutines.test)
-
-    // Android Testing
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
+    testImplementation(libs.androidx.arch.core.testing)
+    testImplementation(libs.com.google.truth)
 
     // Debug Implementation
     debugImplementation(libs.androidx.ui.tooling)
