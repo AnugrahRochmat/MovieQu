@@ -1,6 +1,5 @@
 package anugrah.rochmat.moviequ.data.mapper
 
-import anugrah.rochmat.moviequ.data.model.GenreData
 import anugrah.rochmat.moviequ.data.model.MovieData
 import anugrah.rochmat.moviequ.data.model.MovieResponse
 import anugrah.rochmat.moviequ.domain.entity.Genre
