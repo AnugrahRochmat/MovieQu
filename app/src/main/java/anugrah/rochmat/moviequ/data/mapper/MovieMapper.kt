@@ -22,7 +22,9 @@ object MovieMapper {
 
         return MovieList(
             page = movieResponse.page,
-            movies = movies
+            movies = movies,
+            totalPages = movieResponse.totalPages,
+            totalResult = movieResponse.totalResults
         )
     }
 }
