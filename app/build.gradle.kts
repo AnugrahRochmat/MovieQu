@@ -141,6 +141,9 @@ dependencies {
     implementation(libs.androidx.paging.runtime)
     implementation(libs.androidx.paging.rxjava)
 
+    // coroutines
+    implementation(libs.androidx.kotlinx.coroutines)
+
     // Testing
     testImplementation(libs.junit)
     testImplementation(libs.mockk)

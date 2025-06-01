@@ -25,7 +25,7 @@ coroutines = "1.7.3"
 coil-compose = "2.5.0"
 coreTesting = "2.2.0"
 googleTruth = "1.4.4"
-material = "1.5.8"
+material = "1.8.2"
 paging3 = "3.2.1"
 
 [libraries]
@@ -50,6 +50,7 @@ androidx-compose-material = { group = "androidx.compose.material", name = "mater
 androidx-paging-runtime = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging3" }
 androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging3" }
 androidx-paging-rxjava = { group = "androidx.paging", name = "paging-rxjava3", version.ref = "paging3" }
+androidx-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-rx3", version.ref = "coroutines"}
 
 # RXJava
 reactivex-rxjava3-rxjava = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxJava"}
