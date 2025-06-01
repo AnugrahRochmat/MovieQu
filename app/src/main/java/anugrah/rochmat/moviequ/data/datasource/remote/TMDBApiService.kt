@@ -12,7 +12,7 @@ interface TMDBApiService {
     fun getPopularMovies(
         @Query("api_key") apiKey: String,
         @Query("language") language: String = "en-us",
-        @Query("page") page: String = "1"
+        @Query("page") page: Int = 1
     ): Observable<MovieResponse>
 
     @GET("genre/movie/list")

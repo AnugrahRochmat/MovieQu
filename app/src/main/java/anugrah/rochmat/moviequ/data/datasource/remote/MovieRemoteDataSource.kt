@@ -6,7 +6,7 @@ import anugrah.rochmat.moviequ.data.model.MovieResponse
 import io.reactivex.rxjava3.core.Observable
 
 interface MovieRemoteDataSource {
-    fun getPopularMovies(): Observable<MovieResponse>
+    fun getPopularMovies(page: Int = 1): Observable<MovieResponse>
     fun getMovieGenre(): Observable<GenreResponse>
 }
 
@@ -14,8 +14,11 @@ class MovieRemoteDataSourceImpl(
     private val apiService: TMDBApiService
 ): MovieRemoteDataSource {
 
-    override fun getPopularMovies(): Observable<MovieResponse> {
-        return apiService.getPopularMovies(BuildConfig.TMDB_API_KEY)
+    override fun getPopularMovies(page: Int): Observable<MovieResponse> {
+        return apiService.getPopularMovies(
+            apiKey = BuildConfig.TMDB_API_KEY,
+            page = page
+        )
     }
 
     override fun getMovieGenre(): Observable<GenreResponse> {
