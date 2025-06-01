@@ -5,7 +5,7 @@ import anugrah.rochmat.moviequ.domain.repository.MovieRepository
 import io.reactivex.rxjava3.core.Observable
 
 class GetPopularMoviesUseCase(private val repository: MovieRepository) {
-    operator fun invoke(): Observable<MovieList> {
-        return repository.getPopularMovies()
+    fun invoke(page: Int = 1): Observable<MovieList> {
+        return repository.getPopularMovies(page)
     }
 }
