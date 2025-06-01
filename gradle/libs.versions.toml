@@ -25,6 +25,8 @@ coroutines = "1.7.3"
 coil-compose = "2.5.0"
 coreTesting = "2.2.0"
 googleTruth = "1.4.4"
+material = "1.5.8"
+paging3 = "3.2.1"
 
 [libraries]
 # AndroidX
@@ -42,8 +44,12 @@ androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "l
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
-androidx-navigation-compose = {group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose"}
-io-coilkt-coil-compose = {group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose"}
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose"}
+io-coilkt-coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose"}
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "material" }
+androidx-paging-runtime = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging3" }
+androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging3" }
+androidx-paging-rxjava = { group = "androidx.paging", name = "paging-rxjava3", version.ref = "paging3" }
 
 # RXJava
 reactivex-rxjava3-rxjava = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxJava"}

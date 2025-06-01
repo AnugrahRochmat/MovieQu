@@ -133,6 +133,14 @@ dependencies {
     // Coil-kt Coil Compose
     implementation(libs.io.coilkt.coil.compose)
 
+    // pull-to-refresh
+    implementation(libs.androidx.compose.material)
+
+    // paging3
+    implementation(libs.androidx.paging.compose)
+    implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.rxjava)
+
     // Testing
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
