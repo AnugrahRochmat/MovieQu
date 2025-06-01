@@ -15,7 +15,6 @@ import anugrah.rochmat.moviequ.domain.repository.MovieRepository
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.rx3.asObservable
 
 class MovieRepositoryImpl(
     private val remoteDataSource: MovieRemoteDataSource,
