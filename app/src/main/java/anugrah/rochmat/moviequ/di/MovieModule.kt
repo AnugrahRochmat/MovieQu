@@ -6,6 +6,7 @@ import anugrah.rochmat.moviequ.data.datasource.remote.MovieRemoteDataSource
 import anugrah.rochmat.moviequ.data.datasource.remote.MovieRemoteDataSourceImpl
 import anugrah.rochmat.moviequ.data.repository.MovieRepositoryImpl
 import anugrah.rochmat.moviequ.domain.repository.MovieRepository
+import anugrah.rochmat.moviequ.domain.usecase.GetPopularMoviesPagingUseCase
 import anugrah.rochmat.moviequ.domain.usecase.GetPopularMoviesUseCase
 import anugrah.rochmat.moviequ.presentation.viewmodel.MovieViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -20,7 +21,8 @@ private val movieDataSourceModule = module {
 
 private val movieBusinessModule = module {
     single { GetPopularMoviesUseCase(get()) }
-    viewModel { MovieViewModel(get()) }
+    single { GetPopularMoviesPagingUseCase(get()) }
+    viewModel { MovieViewModel(get(), get()) }
 }
 
 val movieModules = listOf(
